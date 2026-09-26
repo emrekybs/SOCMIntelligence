@@ -6,7 +6,6 @@
 
 <p align="center">
   <b>Multi-platform SOCMINT / OSINT web tool.</b><br>
-  15 source modules, cross-platform identity graph, same-person scoring, case management and tamper-evident reports — in one FastAPI app that starts with a single command.
 </p>
 
 <p align="center">
