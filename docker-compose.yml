@@ -1,0 +1,15 @@
+# Opsiyonel: Docker ile tek servis. Redis / Celery / nginx GEREKMEZ.
+services:
+  socmint:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      - CASES_DB_PATH=/data/cases.db
+    volumes:
+      - socmint_data:/data
+    restart: unless-stopped
+volumes:
+  socmint_data:
