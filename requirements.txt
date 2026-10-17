@@ -1,0 +1,19 @@
+# Sunucu
+fastapi>=0.110,<1
+uvicorn[standard]>=0.29
+pydantic>=2.6,<3
+pydantic-settings>=2.2
+python-multipart>=0.0.9
+# OSINT araclarinin bagimliliklari
+requests>=2.31
+colorama>=0.4.6
+rich>=13.7
+Pillow>=10.3
+imagehash>=4.3.1
+matplotlib>=3.8
+numpy>=1.26
+beautifulsoup4>=4.12
+lxml>=5.1
+openpyxl>=3.1
+PySocks>=1.7.1
+hikerapi>=1.8

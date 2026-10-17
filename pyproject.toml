@@ -1,0 +1,60 @@
+[build-system]
+requires = ["hatchling>=1.24"]
+build-backend = "hatchling.build"
+
+[project]
+name = "socmintelligence"
+version = "1.1.0"
+description = "Multi-platform SOCMINT / OSINT web tool: public-data collection, charts, cross-platform relationship graph, cases and reports."
+readme = "README.md"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Emre Kybs" }]
+requires-python = ">=3.10"
+keywords = ["osint", "socmint", "threat-intelligence", "investigation", "graph"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: POSIX :: Linux",
+  "Framework :: FastAPI",
+  "Topic :: Security",
+  "Environment :: Web Environment",
+]
+dependencies = [
+  "fastapi>=0.110,<1",
+  "uvicorn[standard]>=0.29",
+  "pydantic>=2.6,<3",
+  "pydantic-settings>=2.2",
+  "python-multipart>=0.0.9",
+  "requests>=2.31",
+  "colorama>=0.4.6",
+  "rich>=13.7",
+  "Pillow>=10.3",
+  "imagehash>=4.3.1",
+  "matplotlib>=3.8",
+  "numpy>=1.26",
+  "beautifulsoup4>=4.12",
+  "lxml>=5.1",
+  "openpyxl>=3.1",
+  "PySocks>=1.7.1",
+  "hikerapi>=1.8",
+]
+
+[project.urls]
+Homepage = "https://github.com/emrekybs/SOCMIntelligence"
+Source = "https://github.com/emrekybs/SOCMIntelligence"
+
+[project.scripts]
+socmintelligence = "socmintelligence.cli:main"
+
+[tool.hatch.build]
+exclude = ["**/__pycache__", "**/*.pyc", "data/**", ".env"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["socmintelligence"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"backend/app" = "socmintelligence/backend/app"
+"frontend" = "socmintelligence/frontend"
+
+[tool.hatch.build.targets.sdist]
+include = ["socmintelligence", "backend/app", "frontend", "server.py", "requirements.txt", "README.md", "LICENSE", "docs", "pyproject.toml"]
