@@ -9,11 +9,6 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/pip-socmintelligence-5b83b0">
-
-</p>
-
-<p align="center">
   <img src="docs/screenshots/graph.png" alt="SOCMIntelligence relationship graph" width="100%">
 </p>
 
