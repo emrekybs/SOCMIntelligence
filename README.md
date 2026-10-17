@@ -8,6 +8,17 @@
   <img src="docs/screenshots/graph.png" alt="SOCMIntelligence relationship graph" width="100%">
 </p>
 
+<p align="center">
+  <img src="docs/screenshots/overview.png" alt="Overview" width="100%">
+</p>
+
+<table>
+  <tr>
+    <td width="50%"><img src="docs/screenshots/instagram.png" alt="Instagram module"></td>
+    <td width="50%"><img src="docs/screenshots/snapchat.png" alt="Snapchat module"></td>
+  </tr>
+</table>
+
 ---
 
 ## What it is
