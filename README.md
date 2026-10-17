@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="docs/logo.png" width="130" alt="SOCMIntelligence logo">
-</p>
-
 <h1 align="center">SOCMIntelligence</h1>
 
 <p align="center">
